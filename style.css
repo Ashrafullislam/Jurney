@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar section start here */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.nav-brand-1 {
+    font-style: italic;
+    color: gold;
+    font-size: 40px;
+}
+
+.nav-brand-2 {
+    color: rgb(230, 42, 136);
+
+}
+a.nav-link {
+   
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  
+}
+ul li a{
+    color:white!important;
+    transition: .2s;
+    text-transform: uppercase;
+
+}
+
+ul li a:hover{
+    color:darkblue!important;
+    
+}
+#log-in{
+    padding: 6px 19px;
+    color: rgb(27, 1, 1) !important;
+    border-bottom:3px solid rgb(97, 3, 3); 
+    border-left: 3px solid rgb(97, 3, 3); 
+    border-radius:3rem;
+
+
+}
+#log-in:hover{
+    background-color: aqua;
+    color:blue;
+}
+
+/* Navbar section end here */
+
+
+/* carousel section start here */
+img.d-block.w-100 {
+    height: 80vh;
+  
+}
+.carousel-caption.d-none.d-md-block {
+    display: block;
+}
+
+/* carousel section ene here */
+
+/* aboutus section start here */
+h1.about-title {
+    text-align: left;
+    font-weight: bold;
+}
+.about{
+    border-top: 2px solid gold;
+}
+p.text-justify{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes slide{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left:0%;
+        width: 100%;
+    }
+}
+/* aboutus section end here */
+
+/* Card service section start here */
+img.card-img-top {
+    height: 50vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h2.service-title {
+    font-size: 3rem;
+    font-family: inherit;
+    padding: 2rem 0;
+}
+.card{
+    transition: .2s;
+    cursor: pointer;
+    height: auto;
+}
+.card:hover{
+ transform:translateY(-10%);
+}
+/* Card service section end here */
+
+
+/* contact us section start here */
+h1.contactus-title {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-info {
+    text-align: left;
+    padding-top: 2rem;
+}
+.contactus-title {
+    padding:  0;
+}
+
+.contact{
+    border-top: 2px solid gold;
+    
+}
+.iframe{
+ 
+width: 100%;
+padding-bottom: 56.25%; /*Ratio 16:9 (100% /16*9=56.25*/    
+}
+.iframe>*{
+    display:block ;
+    
+    top:0;
+    right:0;
+    bottom:0;
+    padding:0;
+    margin:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+} 
+/* contact us section end here */
+
+
+/* Footer section start here */
+#footer-section{
+    border-top: 3px solid gold;
+    margin-top: 2rem;
+}
+
+.footer-p{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.text-footer{
+    text-align: center;
+}
+.footer-h5{ 
+    text-decoration: none;
+    color:white;
+ }
+ .dev-name{
+    color:gold;
+ }
+
+.social-share{
+    display:inline;
+    padding:0;
+    margin:0;
+    color:rgb(248, 244, 248);
+    font-size: 32px;
+    padding-top: 3rem;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+a {
+    color:white;
+}
+a:hover{
+    text-decoration: none;
+}
+.facebook {
+     height: 3rem;
+    font-size: 3rem;
+    padding:2px;
+    transition: .2s;
+    cursor: pointer;
+    transition-duration: all .1s ease;
+     margin-top: 3rem;
+
+}
+.facebook:hover{
+    transform: translateX(-2%);
+ 
+}
+.instagram{
+    height: 3rem;
+    font-size: 3rem;
+    padding:2px;
+    transition: .3s;
+    cursor: pointer;
+    transition-duration: all .1s ease;
+
+}
+.instagram:hover{
+    transform: translateX(-2%);
+ 
+}
+.twitter{
+    height: 3rem;
+    font-size: 3rem;
+    padding:2px;
+    transition: .3s;
+    cursor: pointer;
+    transition-duration: all .1s ease;
+
+}
+.twitter:hover{
+    transform: translateX(-2%);
+}
+.linkdin{
+    height: 3rem;
+    font-size: 3rem;
+    padding:2px;
+    transition: .3s;
+    cursor: pointer;
+    transition-duration:all .1s ease;
+  
+
+}
+.linkdin:hover{
+    
+    transform: translateX(-2%);
+}
+.footer-p-title{
+    font-size: 26px;
+    padding-top: 3rem;
+    color:white;
+}
+.footer-menu{
+    padding:2rem 0;
+    font-size:22px;
+    line-height: 3rem;
+}
+
+
+/* Footer section end here */
+
+
+
+
+
+
+         /* Responsive section start here */
+
+ @media (max-width:767px){
+    /* Navbar section start here */
+    ul.navbar-nav {
+        text-align: center;
+    }
+    
+    li.nav-item.active {
+        background: darkblue;
+        padding: 0 !important;
+     
+    }
+    li.nav-item{
+        background: darkblue;
+        padding:0;
+        margin-top: 10px;
+        border-radius:2rem ;
+    }
+    
+    li.nav-item:hover{
+        background: rgb(1, 7, 19);
+      
+    }
+     ul li a:hover{
+        color:rgb(19, 219, 203) !important;
+        border-top:1px solid black;
+    }
+    #log-in-btn{
+        background: none;
+    }
+    a#log-in {
+        width: 50%;
+        margin:0 auto;
+        align-items: center;
+        background-color: rgb(10, 58, 163);
+        border:none;
+       
+    }
+    a#log-in:hover{
+        background-color: rgb(2, 44, 44);
+        color: white !important;
+    }
+    /* Navbar section end here */
+
+    /* footer section start  here */
+    .footer-menu {
+        padding:  0;
+        font-size: 22px;
+        line-height: 3rem;
+        padding: 0;
+        margin: 0;
+        font-size: 17px;
+        
+    }
+    .social-share{
+        display:flex;
+        padding:0;
+        margin:0;
+        color:rgb(248, 244, 248);
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+        
+     
+    
+    }
+    .facebook {
+        height: 3rem;
+        font-size: 3rem;
+        padding: 2px;
+        transition: .2s;
+        cursor: pointer;
+        transition-duration: all .1s ease;
+        margin-top: 0rem;
+    }
+
+    .instagram:hover{
+        transform: translateY(-20%);
+     
+    }
+    .linkdin:hover{
+    
+        transform: translateY(-20%);
+    }
+    .twitter:hover{
+        transform: translateY(-20%);
+    }
+    .facebook:hover{
+        transform: translateY(-20%);
+     
+    }
+     /* footer section start  here */
+    
+ }
